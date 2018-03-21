@@ -1,0 +1,114 @@
+{
+  "name": "app_hospitaisAmericas",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
+    "@ionic-native/action-sheet": "^4.5.2",
+    "@ionic-native/barcode-scanner": "^4.5.2",
+    "@ionic-native/call-number": "^4.5.2",
+    "@ionic-native/camera": "^4.5.2",
+    "@ionic-native/core": "4.4.0",
+    "@ionic-native/date-picker": "^4.5.2",
+    "@ionic-native/facebook": "^4.5.2",
+    "@ionic-native/geolocation": "^4.5.2",
+    "@ionic-native/google-plus": "^4.5.3",
+    "@ionic-native/health": "^4.5.2",
+    "@ionic-native/in-app-browser": "^4.5.2",
+    "@ionic-native/launch-navigator": "^4.5.2",
+    "@ionic-native/local-notifications": "^4.5.2",
+    "@ionic-native/splash-screen": "4.4.0",
+    "@ionic-native/status-bar": "4.4.0",
+    "@ionic-native/wheel-selector": "^4.5.2",
+    "@ionic/storage": "2.1.3",
+    "android-versions": "^1.2.2",
+    "chart.js": "^2.6.0",
+    "cordova-android": "~6.3.0",
+    "cordova-background-geolocation-lt": "^2.10.1",
+    "cordova-plugin-actionsheet": "^2.3.3",
+    "cordova-plugin-background-fetch": "^5.2.1",
+    "cordova-plugin-camera": "^4.0.2",
+    "cordova-plugin-datepicker": "^0.9.3",
+    "cordova-plugin-device": "^1.1.7",
+    "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-facebook4": "^1.9.1",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-googleplus": "^5.2.1",
+    "cordova-plugin-health": "^1.0.3",
+    "cordova-plugin-inappbrowser": "^2.0.2",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^4.1.0",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-wheel-selector-plugin": "^1.0.9",
+    "ionic-angular": "3.9.2",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "ionicons": "3.0.0",
+    "localnotification": "0.0.2",
+    "moment": "2.20.1",
+    "phonegap-plugin-barcodescanner": "^7.0.2",
+    "rxjs": "5.5.2",
+    "sw-toolbox": "3.6.0",
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.1.3",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.6",
+    "typescript": "2.4.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-facebook4": {
+        "APP_ID": "159549258012449",
+        "APP_NAME": "Ionic_Login_3"
+      },
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      },
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-wheel-selector-plugin": {},
+      "cordova-plugin-actionsheet": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-inappbrowser": {},
+      "uk.co.workingedge.phonegap.plugin.launchnavigator": {},
+      "phonegap-plugin-barcodescanner": {},
+      "cordova-plugin-health": {
+        "HEALTH_READ_PERMISSION": "O App precisa de acesso a leitura",
+        "HEALTH_WRITE_PERMISSION": "O App precisa de acesso a escrita"
+      },
+      "cordova-plugin-datepicker": {},
+      "cordova-background-geolocation-lt": {
+        "LICENSE": "YOUR_LICENSE_KEY",
+        "GOOGLE_API_VERSION": "11.6.0",
+        "APPCOMPAT_VERSION": "26.1.0"
+      },
+      "localnotification": {},
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.475032932622-31fv433i4ou6bntsmtvpb9mvlu795lck"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+page-habitos {
+    .titulo-habito {
+        // font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .titulo-habito ion-col ion-icon {
+        // font-size: 25px;
+        font-weight: bold;
+        color: #666;
+    }
+    .lista-habito {
+        font-size: 1.3rem !important;
+        border-bottom: 1px solid #ddd;
+        // // padding-bottom: 20px;
+        span:not(.button-inner) {
+            color: #666;
+        }
+
+        ion-label {
+            overflow: visible;
+            font-size: 1.3rem !important;
+        }
+    }
+    .lista-habito .list .item .item-inner {
+        position: relative;
+        left: -15px;
+    }
+    ion-grid.grid {
+        padding: 20px 0;
+    }
+}

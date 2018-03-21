@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pedidos Pendentes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+   
+      <ion-row wrap *ngFor="let pedido of pedidos">
+
+          <ion-col class="col-12"> {{ pedido.Pedido }}</ion-col>
+          <ion-col class="col-12"> {{ pedido.Veiculo }}</ion-col>
+          <ion-col class="col-12"> {{ pedido.Placa }}</ion-col>          
+    
+      </ion-row>
+  </ion-grid>
+</ion-content>

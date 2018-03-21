@@ -1,0 +1,625 @@
+@font-face {
+    font-family: 'Hind';
+    src: url('../assets/font/Hind-Bold.eot');
+    src: url('../assets/font/Hind-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Hind-Bold.woff2') format('woff2'),
+        url('../assets/font/Hind-Bold.woff') format('woff'),
+        url('../assets/font/Hind-Bold.ttf') format('truetype'),
+        url('../assets/font/Hind-Bold.svg#Hind-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('../assets/font/Hind-Light.eot');
+    src: url('../assets/font/Hind-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Hind-Light.woff2') format('woff2'),
+        url('../assets/font/Hind-Light.woff') format('woff'),
+        url('../assets/font/Hind-Light.ttf') format('truetype'),
+        url('../assets/font/Hind-Light.svg#Hind-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('../assets/font/Hind-Medium.eot');
+    src: url('../assets/font/Hind-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Hind-Medium.woff2') format('woff2'),
+        url('../assets/font/Hind-Medium.woff') format('woff'),
+        url('../assets/font/Hind-Medium.ttf') format('truetype'),
+        url('../assets/font/Hind-Medium.svg#Hind-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('../assets/font/Hind-SemiBold.eot');
+    src: url('../assets/font/Hind-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Hind-SemiBold.woff2') format('woff2'),
+        url('../assets/font/Hind-SemiBold.woff') format('woff'),
+        url('../assets/font/Hind-SemiBold.ttf') format('truetype'),
+        url('../assets/font/Hind-SemiBold.svg#Hind-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('../assets/font/Hind-Regular.eot');
+    src: url('../assets/font/Hind-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/font/Hind-Regular.woff2') format('woff2'),
+        url('../assets/font/Hind-Regular.woff') format('woff'),
+        url('../assets/font/Hind-Regular.ttf') format('truetype'),
+        url('../assets/font/Hind-Regular.svg#Hind-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+      font-family: 'Hind';
+}
+
+.logo1 {
+    content: url("../assets/imgs/logo-gol.png");
+    max-width: 90%;
+}
+.hospital-generico {
+    content: url("../assets/imgs/img_hospital_generica.jpg");
+    max-width: 90%;
+}
+
+.ios ion-menu > .menu-inner > ion-content.statusbar-padding:first-child .scroll-content {
+    padding-top: 0;
+    .perfil {
+        padding-top: 36px;
+    }
+}
+
+@mixin accordion-list() {
+    input[type=checkbox] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .tab {
+        position: relative;
+        margin-bottom: 1px;
+        padding-left: 6px !important;
+        width: 100%;
+        // color: #fff;
+        color: lighten(color($colors, americas_purple), 0);
+        overflow: hidden;
+    }
+    input[type=checkbox] + label {
+        // position: relative;
+        // width: 100%;
+        // display: block;
+        position: absolute;
+        width: 83%;
+        top: 17px;
+        margin-left: 6px;
+    }
+    .contentSemEspera, .contentMinhaSaude, .container {
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height .35s;
+        -o-transition: max-height .35s;
+        transition: max-height .35s;
+    }
+    input:checked ~ .contentSemEspera, input:checked ~ .contentMinhaSaude {
+        max-height: 10em;
+    }
+    input:checked ~ .container {
+        max-height: 100%;
+        ion-list-header {
+            max-height: 100%;
+        }
+    }
+
+    input[type=checkbox] + label::after {
+        position: absolute;
+        right: 16px;
+        top: 5px;
+        width: 1em;
+        height: 1em;
+        font-size: 1.5rem;
+        text-align: right;
+        transition: all .35s;
+    }
+    input[type=checkbox] + label::after {
+        content: "\25BC";
+        color: #84BD00;
+    }
+    input[type=checkbox]:checked + label::after {
+        transform: rotate(180deg);
+    }
+}
+
+[side-menu] {
+    display: flex;
+    flex-direction: column;
+    background-color: white; //lighten(color($colors, americas_purple), 60);
+    font-size: 2.1rem;
+
+    .scroll-content > div {
+        padding-left: 16px;
+    }
+
+    .perfil {
+        display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        // background-color: #E0E0E0;
+        background-color: lighten(color($colors, americas_purple), 0);
+        box-shadow: 0 -1px 8px 1px;
+        // margin-bottom: 8px;
+        .foto {
+            background-color: lighten(color($colors, light-dark),20);
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            ion-icon {
+                font-size: 7rem;
+                margin-left: 5px;
+                margin-top: 5px;
+                color: initial;
+                
+                &.icon-ios {
+                    font-size: 8rem;
+                    margin-left: 7px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        .nome {
+            // color: #757575; //color($colors, light);
+            // color: color($colors, americas_light_green);
+            color: white;
+            padding-top: 16px;
+            margin-left: 16px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    }
+    
+
+    // .linha-icone {
+    //     display: flex;
+    //     svg {
+    //         bottom: 7px;
+    //     }
+    // }
+
+    .tab-header {
+        color: lighten(color($colors, americas_purple), 0);
+        margin-bottom: 8px;
+        font-size: 2.1rem;
+        // color: #757575; //color($colors, americas_light_green);
+        outline: 0;
+    }
+
+    // .tab {
+    //     color: lighten(color($colors, americas_purple), 0);
+        // ion-icon {
+        //     color: color($colors, americas_light_green);
+        // }
+        // label {
+        //     top: -4px;
+        // }
+    // }
+    svg {
+        fill: color($colors, americas_light_green);
+        position: relative;
+        width: 13%;
+        height: 6vh;
+        bottom: -12px;
+        // ~ span {
+        //     top: -4px;
+        // }
+    }
+    hr {
+        // background-color: color($colors, americas_light_green);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 1px;
+        &.primeiro-hr {
+            margin-top: 0;
+            height: 8px;
+        }
+        &.largo {
+            height: 4px;
+        }
+    }
+    button, ion-item {
+        background-color: transparent;
+        color: #757575; //color($colors, light);
+        text-align: left;
+        padding-left: 0;
+        // margin-bottom: 6px;
+        ion-icon {
+            color: color($colors, americas_light_green);
+        }
+    }
+    .contentSemEspera, .contentMinhaSaude {
+        display: flex;
+        flex-direction: column;
+        padding-left: 42px;
+        padding-right: 16px;
+        margin: 0;
+    }
+
+    ion-item.item {
+        .item-inner{
+            border-top: 2px solid #dedede;
+            border-bottom: none;
+        }
+    }
+
+    .div-recuada {
+        padding-left: 6px !important;
+    }
+    
+    @include accordion-list();
+}
+
+// [side-menu] {
+//     display: flex;
+//     flex-direction: column;
+//     background-color: color($colors, americas_purple);
+//     font-size: 2.1rem;
+//     .row {
+//         padding-left: 6px;
+//     }
+
+//     .SubMenu1, .SubMenu2 {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .SubMenu1 button {
+//         padding-left: 40px;
+//     }
+
+//     button {
+//         background-color: transparent;
+//         color: color($colors, light);
+//         text-align: left;
+//         margin-bottom: 6px;
+//     }
+
+//     ion-icon {
+//         font-size: 1.2em;
+//         min-width: 24px;
+//         text-align: center;
+//     }
+// }
+
+@mixin header-padrao($color) {
+    ion-navbar {
+
+        .toolbar-title {
+            color: /*color($colors, light)*/ white !important;
+        }
+        .toolbar-background{
+            background-color: $color !important;
+        }
+        button {
+            color: /*color($colors, light)*/ white !important;
+        }
+    }
+}
+
+@mixin input-padrao($color) {
+    .item-input,
+    .item-datetime {
+        &.item-input-has-focus, 
+        &.input-has-focus {
+            .item-inner {
+                border-bottom-color: $color;
+                box-shadow: inset 0 -1px 0 0 $color;
+            }
+            .label[stacked],
+            .label[floating] {
+                color: $color;
+            }
+        }
+        &.ng-valid:not(.input-has-focus):not(.item-input-has-focus) {
+            &.item-input-has-value,
+            &.input-has-value{
+                .item-inner {
+                    border-bottom: 1px solid #dedede;
+                    box-shadow: none;
+                }
+            } 
+        }
+    }
+}
+
+@mixin list-padrao($text-color) {
+    ion-list.list {
+        /*ion-item-divider {
+            background-color: color($colors, americas_purple_secondary) !important;
+            ion-label.label {
+                color: white;
+                font-weight: bold;
+                margin-left: 16px;
+                font-size: 1.7rem;
+            }
+        }*/
+        ion-item.item .item-inner{
+            border-bottom: 2px solid #dedede;
+        }
+        h3 {
+            font-weight: bolder;
+            font-size: 1.6rem;
+            color: $text-color;
+            text-transform: capitalize;
+        }
+        p {
+            // padding-left: 8px;
+            color: color($colors, americas_gray);
+        }
+        ion-item-options {
+            button[option-delete] {
+                border: none;
+                border-radius: 0;
+                background-color: color($colors, danger) !important;
+                color: white;
+            }
+            button[option-edit] {
+                background-color: color($colors, primary ) !important;
+            }
+            button {
+                max-width: 45px;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@mixin button-padrao($color) {
+    [ion-button]:not(.item-cover):not(.text-input-clear-icon):not(.searchbar-clear-icon):not(.back-button):not([option-delete]):not([option-edit])  {
+        // background-color: color($colors, americas_light_green);
+        // color: color($colors, light);
+        border: 2px solid color($colors, americas_light_green);
+        border-radius: 2px;
+        background-color: white;
+        color: color($colors, americas_light_green);
+        margin-bottom: 8px;
+
+        &:active, &.activated {
+            opacity: .8;
+            background-color: color($colors, americas_light_green);
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+        &[disabled] {
+            border: 2px solid color($colors, americas_light_gray);
+            color: color($colors, americas_light_gray);
+            opacity: 1;
+            box-shadow: none;
+        }
+    }
+}
+
+@mixin fab-padrao($color) {
+    [ion-fab] {
+        background-color: $color;
+        color: color($colors, light);
+        ion-icon {
+            font-size: 2.4rem;
+        }
+        &:active, &.activated {
+            opacity: .8;
+            background-color: $color;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@each $page, $color, $text-color in $pages {
+    page-#{$page} {
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        @include header-padrao($color);
+
+        [sub-header] {
+            height: 44px;
+            background-color: color($colors, americas_purple_secondary) !important;
+            h2 {
+                color: white;
+                font-weight: bold;
+                padding: 12px 16px;
+                font-size: 1.8rem;
+                margin-bottom: 0;
+            }
+        }
+
+        ion-content {
+            .scroll-content {
+                padding: 16px;
+                @include input-padrao($color);
+
+                @include list-padrao($text-color);
+                p, ion-col {
+                    color: $text-color;
+                }
+                ion-card {
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%;
+                }
+            }
+            @include button-padrao($color);
+            @include fab-padrao($color);
+            
+        }
+    }
+}
+
+ion-popover {
+    .popover-content {
+        ion-list{
+            padding: 8px;
+        }
+    }
+}
+
+ion-item {
+    padding-left: 0 !important;
+    ion-input[type=email] {
+        input {
+            text-transform: lowercase;
+        }
+    }
+}
+
+ion-toggle{
+    &.toggle-checked .toggle-icon {
+    background-color: lighten(color($colors, americas_purple),10) !important;
+    }
+    .toggle-icon .toggle-inner{
+        background-color: color($colors, americas_purple) !important;
+    }
+}
+.segment .segment-button {
+    &.segment-activated {
+        background-color: color($colors, americas_light_green);
+        border-color: color($colors, americas_light_green);
+    }
+    &:not(.segment-activated) {
+        border-color: color($colors, americas_light_green);
+        color: color($colors, americas_light_green);
+    }
+}
+
+.item-input {
+    &.ng-valid {
+        &.item-input-has-value, &.input-has-value {
+            &:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}
+.item-md.item-input.ng-touched .item-inner {
+    box-shadow: none !important;
+}
+ion-input {
+    border-bottom: transparent !important;
+}
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, 
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: transparent;
+}
+
+
+
+// .input.ng-touched.ng-invalid .text-input{
+//     border-bottom-color: color($colors, danger);
+// }
+
+//.item.item-input.ng-invalid.ng-touched .item-inner{
+//    &:not(.item-input-has-focus) {
+//        border-bottom-color: color($colors, danger);
+//    }
+//}
+.alert-md .alert-wrapper {
+    max-height: 100%;
+}
+
+.validacao {
+    color: color($colors, danger);
+    font-size: 1.2rem;
+    margin: 0;
+}
+.align-login-button {
+    margin-left: 5px;
+    margin-top:8px
+}
+.icon-login {
+    font-size: 40px;
+}
+.label-login {
+    margin-left: 5px;
+}
+
+[buttons-row] {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    button {
+        flex-grow: 1;
+        margin-left: 0;
+        margin-right: 0;
+        &:last-of-type {
+            margin-left: 6px;
+        }
+        &:first-of-type {
+            margin-right: 6px;
+        }
+        
+    }
+}
+
+[buttons-column] {
+    display: flex;
+    flex-direction: column;
+}
+
+// grupo de botões de filtro
+[grupo-ordenacao] {
+    display: flex;
+    justify-content: center;
+    
+    button {
+        height: 36px !important;
+        width: 100px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.14), ;
+        border: 1px solid color($colors, americas_light_green);
+        background-color: white !important;
+        color: color($colors, americas_light_green) !important;
+        text-transform: capitalize;
+        border-radius: 0 !important;
+        margin-right: 0;
+        margin-left: 0;
+        flex-grow: 1;
+
+        &.active {
+            background-color: color($colors, americas_light_green) !important;
+            color: white !important;
+        }
+
+        &:first-of-type {
+            margin-left: 8px;
+            margin-right: 0;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+        }
+        
+        &:last-of-type {
+            margin-right: 8px;
+            margin-left: 0;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+        }
+    }
+
+}

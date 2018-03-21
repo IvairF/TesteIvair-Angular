@@ -1,0 +1,211 @@
+.inputGroupLastItem {
+  margin-bottom: 10px !important;
+}
+
+.inputGroup {
+  position: relative !important;
+  margin-bottom: 45px;
+  margin-top: 20px !important;
+}
+
+.inputGroup input {
+  font-size: 15px !important;
+  padding: 10px 10px 10px 5px !important;
+  display: block !important;
+  width: 100% !important;
+  color: #555;
+}
+
+.dadoMonitorado-valor-container {
+  padding: 3em 0 3em 0;
+  padding-bottom: 20px;
+}
+
+.dadoMonitorado-valor-datahora {
+  display: block;
+  position: relative;
+  top: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.dadoMonitorado-valor-container .dadoMonitorado-valor-input {
+  display: inline-block;
+  background-color: #fff !important;
+  font-size: 35px;
+  height: 70px;
+  width: 56%;
+  text-align: right;
+  color: #555;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.dadoMonitorado-valor-container .dadoMonitorado-valor-unidade {
+  font-size: 30px;
+  color: #555;
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.inputGroup input:focus,
+.inputGroup .select:focus {
+  outline: none !important;
+}
+ 
+.inputGroup-large-text label,
+.inputGroup label {
+  color: #555 !important;
+  font-size: 1em !important;
+  font-weight: normal !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  left: 5px !important;
+  top: 10px !important;
+  transition: 0.3s ease all !important;
+  -moz-transition: 0.3s ease all !important;
+  -webkit-transition: 0.3s ease all !important;
+}
+
+.inputGroup-large-text input,
+.inputGroup input,
+.inputGroup select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  /* margin-top: 9px; TODO: Verificar no smartphone */
+  margin-top: 9px;
+}
+
+.inputGroup select {
+  /* border-bottom: red 1px solid; */
+}
+
+.inputGroup select~label {
+  margin-top: 6px !important;
+}
+
+.inputGroup input:focus~label,
+.inputGroup input:valid~label,
+.inputGroup input:disabled~label,
+.inputGroup input:read-only~label,
+.inputGroup select:focus~label,
+.inputGroup select:disabled~label,
+.inputGroup select:valid~label {
+  top: -20px !important;
+  /* font-size: 1em !important; */
+  color: #5264AE !important;
+}
+
+.inputGroup-large-text .inputBar,
+.inputGroup .inputBar {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.inputGroup-large-text .inputBar:before,
+.inputGroup-large-text .inputBar:after,
+.inputGroup .inputBar:before,
+.inputGroup .inputBar:after {
+  content: '' !important;
+  height: 1px !important;
+  width: 0 !important;
+  bottom: 1px !important;
+  position: absolute !important;
+  background: #5264AE !important;
+  transition: 0.3s ease all !important;
+  -moz-transition: 0.3s ease all !important;
+  -webkit-transition: 0.3s ease all !important;
+}
+
+.inputGroup-large-text .inputBar:before,
+.inputGroup .inputBar:before {
+  left: 50% !important;
+}
+
+.inputGroup-large-text .inputBar:after,
+.inputGroup .inputBar:after {
+  right: 50% !important;
+}
+
+.inputGroup .validacao {
+  color: red;
+}
+
+.inputGroup-large-text .inputBar:before,
+.inputGroup-large-text .inputBar:after {
+  width: 50% !important;
+  background: #cddc39 !important;
+}
+
+.inputGroup .inputBar:before,
+.inputGroup .inputBar:after {
+  width: 50% !important;
+  background: #999 !important;
+}
+
+.inputGroup-large-text input:focus~.inputBar:before,
+.inputGroup-large-text input:focus~.inputBar:after {
+  width: 50% !important;
+  background: #cddc39 !important;
+}
+
+.inputGroup input:focus~.inputBar:before,
+.inputGroup input:focus~.inputBar:after {
+  width: 50% !important;
+  background: #5264AE !important;
+}
+
+.inputGroup-large-text .inputHighlight,
+.inputGroup .inputHighlight {
+  position: absolute !important;
+  height: 60% !important;
+  width: 100px !important;
+  top: 25% !important;
+  left: 0 !important;
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+
+.inputGroup-large-text input:focus~.inputHighlight,
+.inputGroup input:focus~.inputHighlight {
+  -webkit-animation: inputHighlighter 0.3s ease !important;
+  -moz-animation: inputHighlighter 0.3s ease !important;
+  animation: inputHighlighter 0.3s ease !important;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE !important;
+  }
+  to {
+    width: 0 !important;
+    background: transparent !important;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE !important;
+  }
+  to {
+    width: 0 !important;
+    background: transparent !important;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE !important;
+  }
+  to {
+    width: 0 !important;
+    background: transparent !important;
+  }
+}

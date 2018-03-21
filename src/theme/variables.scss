@@ -1,0 +1,176 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  // primary:    #488aff,
+  primary:    #387ef5,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #e6e6e6,
+  light-dark: #666,
+  dark:       #222,
+  verde-lista:#99CA6B,
+  americas_purple:   #6D2077,
+  americas_purple_dark:   #5f1c68,
+  americas_purple_secondary: #9E007E,
+  americas_gray: #63666A,
+  americas_light_gray: #BBBCBC,
+  americas_light_green: #84BD00,
+  americas_menu_gray: #757575,
+  facebook: #3b5998,
+  // menu_azul: #0047bb,
+  // menu_amarelo: #eaaa00,
+  // Titulo_DadosMonitorados: #cddc39,
+  historico_doencas: #9E007E,
+  alergias: #0047BB,
+  habitos: #EAAA00,
+  dados_monitorados: #cddc39,
+  lighter:      #f4f4f4
+);
+
+.input-wrapper ion-label {
+  color: #666;
+}
+
+.row [padding-default] {
+  padding: 4px 6px;
+}
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+$toolbar-ios-title-text-color: color($colors, light);
+$toolbar-ios-button-color: color($colors, light);
+$toolbar-ios-height: 43px;
+$tabs-ios-tab-text-color-active: color($colors, americas_purple);
+$tabs-ios-tab-icon-color-active: color($colors, americas_purple);
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+$toolbar-md-title-text-color: color($colors, light);
+$toolbar-md-button-color: color($colors, light);
+$toolbar-md-height: 43px;
+$item-md-detail-push-show: true;
+$tabs-md-tab-text-color-active: color($colors, americas_purple);
+$tabs-md-tab-icon-color-active: color($colors, americas_purple);
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+$pages: 
+  // (Nome da page, cor do header/buttons, cor do texto)
+  (principal, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (especialidades, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (especialidades-por-unidade, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (hospitais, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (hospitais-busca-geral, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (detalhe-hospital, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (minha-saude, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (busca-pacientes, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (detalhe-paciente, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (finalizacao-pretriagem, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (finalizar-pretriagem, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (pacientes, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (cadastrar, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (alterar-senha, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (esqueci-senha, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (notificacoes, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (checkin, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (historico-medicamento, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (qrcode, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (medicamentos-em-uso, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (cadastro-medicamentos, color($colors, americas_purple), color($colors, americas_purple_dark)),  // alergias
+  (alergias, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (editar-alergias, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  
+  // historico de doen�as
+  (historico-de-doencas, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (adicionar-antecedentes-familiares, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (antecedentes-familiares, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (adicionar-antecedentes-pessoais, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (antecedentes-pessoais, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (adicionar-cirurgias-realizadas, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (cirurgias-realizadas, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (detalhe-necessidades-especiais, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (necessidades-especiais, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  
+  // habitos
+  (detalhe-ativ-fisica, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (detalhe-bebidas, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (detalhe-tabagismo, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (habitos, color($colors, americas_purple), color($colors, americas_purple_dark)),
+
+  // dados monitorados
+  (dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (config-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (graficos-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (historico-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (parametro-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (passos-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (periodo-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (valor-dados-monitorados, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  (passos-valor-atual, color($colors, americas_purple), color($colors, americas_purple_dark)),
+  //Perfil
+  (perfil, color($colors, americas_purple), color($colors, americas_purple_dark));
